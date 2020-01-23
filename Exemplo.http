@@ -1,0 +1,65 @@
+// extenção rest client que faz essa brincadeira funcionar
+//http://localhost:3000 é a rota criada no nosso db.json ao subir ele
+
+GET http://localhost:3000/Usuario
+
+###
+
+GET http://localhost:3000/endereco
+
+###
+
+GET http://localhost:3000/endereco/1
+
+###
+
+GET http://localhost:3000/disciplina
+
+###
+
+GET http://localhost:3000/disciplina/1
+
+###
+
+POST http://localhost:3000/Usuario
+Content-Type: application/json
+
+{
+    "id": 1,
+    "cpf": "4444",
+    "senha": "123",
+    "tipo": "aluno",
+    "nome": "alberto",
+    "email": "alberto@gmail.com",
+    "telefone": "22222222",
+    "celular": "99999999"
+}
+
+###
+
+POST http://localhost:3000/endereco
+Content-Type: application/json
+
+{
+    "id": 4,
+    "cep": 25655090,
+    "bairro": "Valparaiso",
+    "cidade": "Petropolis",
+    "rua": "Rua Rockfeler",
+    "numero": 439
+}
+
+###
+
+PUT http://localhost:3000/Usuario/1
+Content-Type: application/json
+
+{
+    "nome": "alberto",
+    "senha": "123",
+    "pontos": ["1","2","3"]
+}
+
+###
+
+DELETE http://localhost:3000/pessoas/2
